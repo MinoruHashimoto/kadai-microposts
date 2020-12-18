@@ -14,11 +14,11 @@
             <ul class="dropdown-menu dropdown-menu-right">
               <li class="dropdown-item"><%= link_to 'My profile', user_path(current_user) %></li>
               <li class="dropdown-divider"></li>
-              <li class="dropdown-item"><%= link_to 'Edit', edit_user_path(current_user) %></li>
+              <li class="dropdown-item"><%= link_to 'Modify Account', edit_user_path(current_user) %></li>
               <li class="dropdown-divider"></li>
               <li class="dropdown-item"><%= link_to 'Logout', logout_path, method: :delete %></li>
               <li class="dropdown-divider"></li>
-              <li class="dropdown-item"><%= link_to 'Delete', @user, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %></li>
+              <li class="dropdown-item"><%= link_to 'Delete Account', @user, method: :delete, data: { confirm: '本当に削除してよろしいですか？' } %></li>
             </ul>
           </li>
         <% else %>        
